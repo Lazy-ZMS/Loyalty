@@ -1,4 +1,4 @@
-# Generator_Core.py
+# generator_core.py
 from collections import deque
 from time import time, sleep as sys_sleep
 
