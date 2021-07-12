@@ -2,15 +2,15 @@ import pyodbc
 from datetime import datetime
 
 class Sql:
-    def __init__(self, database, server="LAZY-BOOK"):
+    def __init__(self, database, server="1C-TEST"):
 
-        username = 'sa'
-        password = 'ТуЦеЩт4994'
+        # username = 'sa'
+        # password = 'ТуЦеЩт4994'
         self.cnxn = pyodbc.connect("Driver={SQL Server Native Client 11.0};"
                                    "Server="+server+";"
                                    "Database="+database+";"
-                                    "username="+username+";"
-                                    "password="+password+";"
+                                    # "username="+username+";"
+                                    # "password="+password+";"
                                     "Trusted_Connection=yes;")
         self.query = "-- {}\n\n-- Made in Python".format(datetime.now()
                                                          .strftime("%d/%m/%Y"))
@@ -35,5 +35,5 @@ def get_diskount_level_from_SQL(CardType, CardNumber):
 
     return (Result_tuple[0])
 
-# diskount_level = get_diskount_level_from_SQL('999664779')
-# print(diskount_level)
+diskount_level = get_diskount_level_from_SQL(1, '999664779')
+print(diskount_level)
