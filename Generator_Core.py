@@ -1,4 +1,4 @@
-# concurrency.py
+# Generator_Core.py
 from collections import deque
 from time import time, sleep as sys_sleep
 
