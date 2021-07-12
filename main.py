@@ -2,9 +2,7 @@ from tkinter import *
 from tkinter import filedialog
 from Read_Settings import *
 
-
-  
-def query_file_btn_click():  
+def query_file_btn_click():
     Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
     filename = filedialog.askdirectory()
     print(filename)
