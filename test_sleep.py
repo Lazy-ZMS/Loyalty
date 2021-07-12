@@ -19,8 +19,8 @@ def copy_File_from_kass(timeout):
             shutil.copy(filename, dest_dir)
             
 
-##hello("Петров", 1)
+hello("Петров", 1)
 ##hello("Иванов", 3.0)
 ##hello("Мир", 5.0)
-copy_File_from_kass(0.5)
+##copy_File_from_kass(0.5)
 run()
